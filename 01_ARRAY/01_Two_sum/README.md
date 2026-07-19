@@ -1,8 +1,20 @@
-01. Two sum problem.
+# Two Sum
 
-Solution : We have given an array of integers nums and a target value we have to return the index of two numbers so that the sum of the two number is equal to the target value.
+**LeetCode:** 1  
+**Difficulty:** Easy
 
-Approach : We are using the Hash map approach.
+## Problem
+Given an array of integers `nums` and a target, return the indices of the two numbers whose sum equals the target.
 
-Time complexity = O(n)
-Space complexity = O(n)
+## Approach
+- Use a hash map to store each number and its index.
+- For each element, check if its complement (`target - current`) exists.
+- If found, return the two indices.
+
+## Time Complexity
+- **O(n)**
+
+## Space Complexity
+- **O(n)**
+
+
