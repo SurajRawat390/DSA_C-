@@ -21,6 +21,9 @@ vector<vector<int>>four_sum(vector<int>&nums,int target){
             int st = j+1;
             int end= n-1;
             while(st < end){
+                // We use long long to prevent the overflow of integers .
+                // supposer we have big numbers as input to handle them we use long long so that it can convert the int into long long data type.
+                
                 long long sum = 1LL* nums[i] + nums[j] + nums[st] + nums[end];
 
                 if(sum == target){
